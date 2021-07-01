@@ -23,7 +23,7 @@ public class ReportCreator {
     }
 
     public Path createReport(Schedule schedule, String filename) throws JRException, FileNotFoundException {
-        String outputFile = "src//main//resources//templates//pdf//" + filename + ".pdf";
+        String outputFile = "src//main//resources//templates//" + filename + ".pdf";
 
         JRBeanCollectionDataSource itemsJRBean = new JRBeanCollectionDataSource(schedule.getPayments());
 
